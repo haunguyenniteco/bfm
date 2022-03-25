@@ -1,0 +1,5 @@
+describe('<SidebarNavigation />', () => {
+  it('Expect to have unit tests specified', () => {
+    expect(true).toEqual(true)
+  })
+})

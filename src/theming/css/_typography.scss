@@ -1,0 +1,35 @@
+@font-face {
+    font-family: $font-family__impact;
+    src: url('./../fonts/impact/Impact.woff2') format('woff2'),
+        url('./../fonts/impact/Impact.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: $font-family__normal;
+    src: url('./../fonts/opensans/OpenSans-Regular.woff2') format('woff2'),
+        url('./../fonts/opensans/OpenSans-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: $font-family__bold;
+    src: url('./../fonts/opensans/OpenSans-Bold.woff2') format('woff2'),
+        url('./../fonts/opensans/OpenSans-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: $font-family__extrabold;
+    src: url('./../fonts/opensans/OpenSans-ExtraBold.woff2') format('woff2'),
+        url('./../fonts/opensans/OpenSans-ExtraBold.woff') format('woff');
+    font-weight: 800;
+    font-style: normal;
+    font-display: swap;
+}

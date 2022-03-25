@@ -1,0 +1,16 @@
+export default {
+  CART_VIEWED: 'cartView',
+  CHECKOUT: 'checkout',
+  CHECKOUT_OPTION: 'checkoutOption',
+  ORDER_COMPLETED: 'orderCompleted',
+  ORDER_UPDATED: 'orderUpdated',
+  PAYMENT_INFO_ENTERED: 'purchase',
+  PRODUCT_ADDED: 'addToBasket',
+  PRODUCT_REMOVED: 'removeFromBasket',
+  PRODUCT_VIEWED: 'detailView',
+  PRODUCT_CLICK: 'productClick',
+  PRODUCT_LIST_VIEWED: 'impression',
+  PRODUCT_GRID_VIEWED: 'gridImpression',
+  PAGE_VIEW: 'pageView',
+  ROUTE_CHANGE: 'routeChange',
+}

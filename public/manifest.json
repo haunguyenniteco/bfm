@@ -1,0 +1,21 @@
+{
+  "name": "E-commerce Web Storefront",
+  "short_name": "Storefront",
+  "icons": [
+    {
+      "src": "/images/icon-192.png",
+      "type": "image/png",
+      "sizes": "192x192"
+    },
+    {
+      "src": "/images/icon-512.png",
+      "type": "image/png",
+      "sizes": "512x512"
+    }
+  ],
+  "background_color": "#FFFFFF",
+  "description": "E-commerce Storefront",
+  "display": "standalone",
+  "start_url": "/",
+  "theme_color": "#0061b6"
+}

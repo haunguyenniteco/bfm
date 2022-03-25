@@ -1,0 +1,7 @@
+{
+  "baseUrl": "http://localhost:3000",
+  "videoUploadOnPasses": false,
+  "env": {
+    "CYPRESS_CRASH_REPORTS": 0
+  }
+}

@@ -1,0 +1,20 @@
+{
+  "compilerOptions": {
+    "target": "es2017",
+    "allowSyntheticDefaultImports": false,
+    "baseUrl": "src",
+    "paths": {
+      "@lib/*": ["lib/*"],
+      "@hooks/*": ["hooks/*"],
+      "@contexts/*": ["contexts/*"],
+      "@components/*": ["components/*"],
+      "@containers/*": ["containers/*"],
+      "@hoc/*": ["hoc/*"],
+      "@theming/*": ["theming/*"],
+      "@lang/*": ["lang/*"],
+      "@graphql-server/*": ["graphql/server/*"],
+      "@graphql-sdk/*": ["graphql/sdk/*"],
+    },
+    "experimentalDecorators": true
+  }
+}

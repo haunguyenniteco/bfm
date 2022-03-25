@@ -1,0 +1,1077 @@
+{
+  "id": "e4a9fc89-37de-445e-9315-c62118a8313a",
+  "items": [
+    {
+      "basketItemId": "6281007023573",
+      "unit_price": 0.28,
+      "clicksUnitPrice": 0.28,
+      "bricksUnitPrice": 0.28,
+      "sku": "6281007023573",
+      "masterProductId": "07236a0e-6e64-4ced-91db-fd62e705a9d8",
+      "quantity": 5,
+      "id": "85561014-e0ac-48ec-9e9f-8f70aa40b60a",
+      "name": {
+        "__typename": "LocaleField",
+        "en": "Almarai Triangle Cheese 120G",
+        "fi": "Almarai Triangle Cheese 120G",
+        "es": "Almarai Triangle Cheese 120G",
+        "pt": "Almarai Triangle Cheese 120G"
+      },
+      "media": [
+        {
+          "__typename": "Media",
+          "mediaStorageKey": "https://images.ctfassets.net/bsfmk4qmje7z/6iy14vlrnVQlEux7jlID6Z/819b92095fce162df416ddc9ce535cf9/1001335.jpg?h=70&w=70",
+          "mediaDimensionWidth": 70,
+          "mediaDimensionHeight": 70,
+          "mediaSequence": 1,
+          "mediaTypeCode": "PICTURE"
+        },
+        {
+          "__typename": "Media",
+          "mediaStorageKey": "https://images.ctfassets.net/bsfmk4qmje7z/6iy14vlrnVQlEux7jlID6Z/819b92095fce162df416ddc9ce535cf9/1001335.jpg?h=100&w=100",
+          "mediaDimensionWidth": 100,
+          "mediaDimensionHeight": 100,
+          "mediaSequence": 1,
+          "mediaTypeCode": "PICTURE"
+        },
+        {
+          "__typename": "Media",
+          "mediaStorageKey": "https://images.ctfassets.net/bsfmk4qmje7z/6iy14vlrnVQlEux7jlID6Z/819b92095fce162df416ddc9ce535cf9/1001335.jpg?h=320&w=320",
+          "mediaDimensionWidth": 320,
+          "mediaDimensionHeight": 320,
+          "mediaSequence": 1,
+          "mediaTypeCode": "PICTURE"
+        },
+        {
+          "__typename": "Media",
+          "mediaStorageKey": "https://images.ctfassets.net/bsfmk4qmje7z/6iy14vlrnVQlEux7jlID6Z/819b92095fce162df416ddc9ce535cf9/1001335.jpg?h=512&w=512",
+          "mediaDimensionWidth": 512,
+          "mediaDimensionHeight": 512,
+          "mediaSequence": 1,
+          "mediaTypeCode": "PICTURE"
+        }
+      ],
+      "extId": "1001335-6281007023573",
+      "gtin": "6281007023573",
+      "totalClicksPrice": 1.68,
+      "totalBricksPrice": 1.68,
+      "categories": [
+        {
+          "__typename": "Category",
+          "extId": "41",
+          "name": {
+            "__typename": "LocaleField",
+            "en": "CHEESE"
+          },
+          "parentName": {
+            "__typename": "LocaleField",
+            "en": "DAIRY"
+          },
+          "parentExtId": "40",
+          "level": 2,
+          "path": "online/40/41"
+        },
+        {
+          "__typename": "Category",
+          "extId": "40",
+          "name": {
+            "__typename": "LocaleField",
+            "en": "DAIRY"
+          },
+          "parentName": {
+            "__typename": "LocaleField",
+            "en": "online"
+          },
+          "parentExtId": "online",
+          "level": 1,
+          "path": "online/40"
+        }
+      ],
+      "promotions": [],
+      "allowReplace": false,
+      "note": "",
+      "externalData": {
+        "price": 0.28,
+        "oldPrice": null,
+        "isPiecePricedByWeight": false
+      }
+    },
+    {
+      "basketItemId": "6281011135477",
+      "unit_price": 1.88,
+      "clicksUnitPrice": 1.88,
+      "bricksUnitPrice": 1.88,
+      "sku": "6281011135477",
+      "masterProductId": "1cf0971b-f950-4a64-86ac-e88d850ceec2",
+      "quantity": 1,
+      "id": "670d253b-8b05-4042-9405-1d20f8331c04",
+      "name": {
+        "__typename": "LocaleField",
+        "en": "Afia Sunflower Oil 1.8Ltr",
+        "fi": "Afia Sunflower Oil 1.8Ltr",
+        "es": "Afia Sunflower Oil 1.8Ltr",
+        "pt": "Afia Sunflower Oil 1.8Ltr"
+      },
+      "media": [
+        {
+          "__typename": "Media",
+          "mediaStorageKey": "https://images.ctfassets.net/bsfmk4qmje7z/3sDfXZGZb3WjQcidR4QViU/60a6ecb46697cda90e23403666c40d50/1000514.png?h=70&w=70",
+          "mediaDimensionWidth": 70,
+          "mediaDimensionHeight": 70,
+          "mediaSequence": 1,
+          "mediaTypeCode": "PICTURE"
+        },
+        {
+          "__typename": "Media",
+          "mediaStorageKey": "https://images.ctfassets.net/bsfmk4qmje7z/3sDfXZGZb3WjQcidR4QViU/60a6ecb46697cda90e23403666c40d50/1000514.png?h=100&w=100",
+          "mediaDimensionWidth": 100,
+          "mediaDimensionHeight": 100,
+          "mediaSequence": 1,
+          "mediaTypeCode": "PICTURE"
+        },
+        {
+          "__typename": "Media",
+          "mediaStorageKey": "https://images.ctfassets.net/bsfmk4qmje7z/3sDfXZGZb3WjQcidR4QViU/60a6ecb46697cda90e23403666c40d50/1000514.png?h=320&w=320",
+          "mediaDimensionWidth": 320,
+          "mediaDimensionHeight": 320,
+          "mediaSequence": 1,
+          "mediaTypeCode": "PICTURE"
+        },
+        {
+          "__typename": "Media",
+          "mediaStorageKey": "https://images.ctfassets.net/bsfmk4qmje7z/3sDfXZGZb3WjQcidR4QViU/60a6ecb46697cda90e23403666c40d50/1000514.png?h=512&w=512",
+          "mediaDimensionWidth": 512,
+          "mediaDimensionHeight": 512,
+          "mediaSequence": 1,
+          "mediaTypeCode": "PICTURE"
+        }
+      ],
+      "extId": "1000514-6281011135477",
+      "gtin": "6281011135477",
+      "totalClicksPrice": null,
+      "totalBricksPrice": null,
+      "categories": [
+        {
+          "__typename": "Category",
+          "extId": "11",
+          "name": {
+            "__typename": "LocaleField",
+            "en": "EDIBLE OIL"
+          },
+          "parentName": {
+            "__typename": "LocaleField",
+            "en": "STAPLES & GROCERY"
+          },
+          "parentExtId": "10",
+          "level": 2,
+          "path": "online/10/11"
+        },
+        {
+          "__typename": "Category",
+          "extId": "10",
+          "name": {
+            "__typename": "LocaleField",
+            "en": "STAPLES & GROCERY"
+          },
+          "parentName": {
+            "__typename": "LocaleField",
+            "en": "online"
+          },
+          "parentExtId": "online",
+          "level": 1,
+          "path": "online/10"
+        }
+      ],
+      "promotions": [],
+      "allowReplace": false,
+      "note": "",
+      "externalData": {
+        "price": 1.88,
+        "oldPrice": null,
+        "isPiecePricedByWeight": false
+      }
+    }
+  ],
+  "shipping": {
+    "customer": null,
+    "address": {
+      "lat": 38.7222524,
+      "lon": -9.1393366,
+      "address": {
+        "street": " undefined ",
+        "locality": "Lisbon",
+        "postal_area": "Lisbon",
+        "country": "Portugal",
+        "formatted_address": "Lisbon, Portugal"
+      },
+      "formattedAddress": "Lisbon, Portugal"
+    },
+    "delivery": {
+      "store": {
+        "id": "4",
+        "placeId": "02a1708f-63d7-44dc-aa02-3ea888d3546a",
+        "masterId": "",
+        "name": "Parque das Nações – Norte",
+        "street": "Empreendimento Verde Parque, Lote 5",
+        "building": null,
+        "postcode": "1900-515",
+        "city": "Lisboa",
+        "latitude": "38.79131",
+        "longitude": "-9.0993",
+        "distance": null,
+        "__typename": "Place"
+      },
+      "type": "pickup",
+      "slot": {
+        "__typename": "PickupSlotItem",
+        "id": "82",
+        "type": null,
+        "date": "2020-09-16T21:00:00.000Z",
+        "startsAt": "16:00",
+        "endsAt": "18:00",
+        "graceDays": null,
+        "graceHours": null,
+        "deliveryPrice": null,
+        "collectionPrice": null,
+        "deliveryType": null,
+        "active": null,
+        "pickupLocationId": "4"
+      }
+    },
+    "charge": 0
+  },
+  "orchestration": {
+    "orchestrationId": "a414b67f-cb26-4359-b442-cbb29a03a406",
+    "partOrchestrationId": "f4ffc5c2-f920-48b3-90ac-9c16364bb2af",
+    "totalPrice": {
+      "price": 0,
+      "currency": "EUR",
+      "priceVat": 1.68,
+      "__typename": "OrchestrationCurrencyPrice"
+    },
+    "rawData": {
+      "orchestrationId": "a414b67f-cb26-4359-b442-cbb29a03a406",
+      "place": {
+        "id": "02a1708f-63d7-44dc-aa02-3ea888d3546a",
+        "__typename": "OrchestrationPlace"
+      },
+      "parts": [
+        {
+          "orchestrationId": "f4ffc5c2-f920-48b3-90ac-9c16364bb2af",
+          "dropshipperId": null,
+          "deliveryMethods": [
+            {
+              "id": "6a77d925-61a2-400e-8c2c-dad8c1a8faf1",
+              "placeId": "02a1708f-63d7-44dc-aa02-3ea888d3546a",
+              "forDropshipping": false,
+              "providerId": "be243a4c-3919-44b4-8bf7-6dabc3e70c36",
+              "logoUrl": "/logo/delivery_method.png",
+              "price": {
+                "currency": null,
+                "min": 0,
+                "max": 0,
+                "__typename": "OrchestrationMinMaxCurrencyPrice"
+              },
+              "type": "foodie",
+              "services": [
+                {
+                  "id": "62372265-52eb-4ca8-8e68-b301a8ed523a",
+                  "type": "pickup",
+                  "name": "Amadora",
+                  "code": "1",
+                  "address": {
+                    "city": null,
+                    "street": null,
+                    "postcode": null,
+                    "__typename": "OrchestrationDeliveryMethodServiceAddress"
+                  },
+                  "price": {
+                    "currency": "EUR",
+                    "min": 0,
+                    "max": 20,
+                    "__typename": "OrchestrationMinMaxCurrencyPrice"
+                  },
+                  "slots": [
+                    {
+                      "date": "2020-08-27",
+                      "slots": [],
+                      "__typename": "OrchestrationDeliveryMethodServiceSlot"
+                    },
+                    {
+                      "date": "2020-08-28",
+                      "slots": [
+                        {
+                          "id": "6",
+                          "startTime": "10:00",
+                          "endTime": "15:00",
+                          "price": null,
+                          "isFull": false,
+                          "timezone": "+0100",
+                          "fillPercentage": 0,
+                          "__typename": "OrchestrationDeliveryMethodServiceSlotItem"
+                        },
+                        {
+                          "id": "9",
+                          "startTime": "15:00",
+                          "endTime": "20:00",
+                          "price": null,
+                          "isFull": false,
+                          "timezone": "+0100",
+                          "fillPercentage": 0,
+                          "__typename": "OrchestrationDeliveryMethodServiceSlotItem"
+                        }
+                      ],
+                      "__typename": "OrchestrationDeliveryMethodServiceSlot"
+                    },
+                    {
+                      "date": "2020-08-29",
+                      "slots": [
+                        {
+                          "id": "7",
+                          "startTime": "10:00",
+                          "endTime": "15:00",
+                          "price": null,
+                          "isFull": false,
+                          "timezone": "+0100",
+                          "fillPercentage": 0,
+                          "__typename": "OrchestrationDeliveryMethodServiceSlotItem"
+                        },
+                        {
+                          "id": "8",
+                          "startTime": "15:00",
+                          "endTime": "20:00",
+                          "price": null,
+                          "isFull": false,
+                          "timezone": "+0100",
+                          "fillPercentage": 0,
+                          "__typename": "OrchestrationDeliveryMethodServiceSlotItem"
+                        }
+                      ],
+                      "__typename": "OrchestrationDeliveryMethodServiceSlot"
+                    },
+                    {
+                      "date": "2020-08-30",
+                      "slots": [],
+                      "__typename": "OrchestrationDeliveryMethodServiceSlot"
+                    },
+                    {
+                      "date": "2020-08-31",
+                      "slots": [
+                        {
+                          "id": "2",
+                          "startTime": "10:00",
+                          "endTime": "15:00",
+                          "price": null,
+                          "isFull": false,
+                          "timezone": "+0100",
+                          "fillPercentage": 0,
+                          "__typename": "OrchestrationDeliveryMethodServiceSlotItem"
+                        },
+                        {
+                          "id": "13",
+                          "startTime": "15:00",
+                          "endTime": "20:00",
+                          "price": null,
+                          "isFull": false,
+                          "timezone": "+0100",
+                          "fillPercentage": 0,
+                          "__typename": "OrchestrationDeliveryMethodServiceSlotItem"
+                        }
+                      ],
+                      "__typename": "OrchestrationDeliveryMethodServiceSlot"
+                    },
+                    {
+                      "date": "2020-09-01",
+                      "slots": [
+                        {
+                          "id": "3",
+                          "startTime": "10:00",
+                          "endTime": "15:00",
+                          "price": null,
+                          "isFull": false,
+                          "timezone": "+0100",
+                          "fillPercentage": 0,
+                          "__typename": "OrchestrationDeliveryMethodServiceSlotItem"
+                        },
+                        {
+                          "id": "12",
+                          "startTime": "15:00",
+                          "endTime": "20:00",
+                          "price": null,
+                          "isFull": false,
+                          "timezone": "+0100",
+                          "fillPercentage": 0,
+                          "__typename": "OrchestrationDeliveryMethodServiceSlotItem"
+                        }
+                      ],
+                      "__typename": "OrchestrationDeliveryMethodServiceSlot"
+                    },
+                    {
+                      "date": "2020-09-02",
+                      "slots": [
+                        {
+                          "id": "4",
+                          "startTime": "10:00",
+                          "endTime": "15:00",
+                          "price": null,
+                          "isFull": false,
+                          "timezone": "+0100",
+                          "fillPercentage": 0,
+                          "__typename": "OrchestrationDeliveryMethodServiceSlotItem"
+                        },
+                        {
+                          "id": "11",
+                          "startTime": "15:00",
+                          "endTime": "20:00",
+                          "price": null,
+                          "isFull": false,
+                          "timezone": "+0100",
+                          "fillPercentage": 0,
+                          "__typename": "OrchestrationDeliveryMethodServiceSlotItem"
+                        }
+                      ],
+                      "__typename": "OrchestrationDeliveryMethodServiceSlot"
+                    },
+                    {
+                      "date": "2020-09-03",
+                      "slots": [
+                        {
+                          "id": "5",
+                          "startTime": "10:00",
+                          "endTime": "15:00",
+                          "price": null,
+                          "isFull": false,
+                          "timezone": "+0100",
+                          "fillPercentage": 0,
+                          "__typename": "OrchestrationDeliveryMethodServiceSlotItem"
+                        },
+                        {
+                          "id": "10",
+                          "startTime": "15:00",
+                          "endTime": "20:00",
+                          "price": null,
+                          "isFull": false,
+                          "timezone": "+0100",
+                          "fillPercentage": 0,
+                          "__typename": "OrchestrationDeliveryMethodServiceSlotItem"
+                        }
+                      ],
+                      "__typename": "OrchestrationDeliveryMethodServiceSlot"
+                    },
+                    {
+                      "date": "2020-09-04",
+                      "slots": [
+                        {
+                          "id": "6",
+                          "startTime": "10:00",
+                          "endTime": "15:00",
+                          "price": null,
+                          "isFull": false,
+                          "timezone": "+0100",
+                          "fillPercentage": 0,
+                          "__typename": "OrchestrationDeliveryMethodServiceSlotItem"
+                        },
+                        {
+                          "id": "9",
+                          "startTime": "15:00",
+                          "endTime": "20:00",
+                          "price": null,
+                          "isFull": false,
+                          "timezone": "+0100",
+                          "fillPercentage": 0,
+                          "__typename": "OrchestrationDeliveryMethodServiceSlotItem"
+                        }
+                      ],
+                      "__typename": "OrchestrationDeliveryMethodServiceSlot"
+                    },
+                    {
+                      "date": "2020-09-05",
+                      "slots": [
+                        {
+                          "id": "7",
+                          "startTime": "10:00",
+                          "endTime": "15:00",
+                          "price": null,
+                          "isFull": false,
+                          "timezone": "+0100",
+                          "fillPercentage": 0,
+                          "__typename": "OrchestrationDeliveryMethodServiceSlotItem"
+                        },
+                        {
+                          "id": "8",
+                          "startTime": "15:00",
+                          "endTime": "20:00",
+                          "price": null,
+                          "isFull": false,
+                          "timezone": "+0100",
+                          "fillPercentage": 0,
+                          "__typename": "OrchestrationDeliveryMethodServiceSlotItem"
+                        }
+                      ],
+                      "__typename": "OrchestrationDeliveryMethodServiceSlot"
+                    },
+                    {
+                      "date": "2020-09-06",
+                      "slots": [],
+                      "__typename": "OrchestrationDeliveryMethodServiceSlot"
+                    },
+                    {
+                      "date": "2020-09-07",
+                      "slots": [
+                        {
+                          "id": "2",
+                          "startTime": "10:00",
+                          "endTime": "15:00",
+                          "price": null,
+                          "isFull": false,
+                          "timezone": "+0100",
+                          "fillPercentage": 0,
+                          "__typename": "OrchestrationDeliveryMethodServiceSlotItem"
+                        },
+                        {
+                          "id": "13",
+                          "startTime": "15:00",
+                          "endTime": "20:00",
+                          "price": null,
+                          "isFull": false,
+                          "timezone": "+0100",
+                          "fillPercentage": 0,
+                          "__typename": "OrchestrationDeliveryMethodServiceSlotItem"
+                        }
+                      ],
+                      "__typename": "OrchestrationDeliveryMethodServiceSlot"
+                    },
+                    {
+                      "date": "2020-09-08",
+                      "slots": [
+                        {
+                          "id": "3",
+                          "startTime": "10:00",
+                          "endTime": "15:00",
+                          "price": null,
+                          "isFull": false,
+                          "timezone": "+0100",
+                          "fillPercentage": 0,
+                          "__typename": "OrchestrationDeliveryMethodServiceSlotItem"
+                        },
+                        {
+                          "id": "12",
+                          "startTime": "15:00",
+                          "endTime": "20:00",
+                          "price": null,
+                          "isFull": false,
+                          "timezone": "+0100",
+                          "fillPercentage": 0,
+                          "__typename": "OrchestrationDeliveryMethodServiceSlotItem"
+                        }
+                      ],
+                      "__typename": "OrchestrationDeliveryMethodServiceSlot"
+                    },
+                    {
+                      "date": "2020-09-09",
+                      "slots": [
+                        {
+                          "id": "4",
+                          "startTime": "10:00",
+                          "endTime": "15:00",
+                          "price": null,
+                          "isFull": false,
+                          "timezone": "+0100",
+                          "fillPercentage": 0,
+                          "__typename": "OrchestrationDeliveryMethodServiceSlotItem"
+                        },
+                        {
+                          "id": "11",
+                          "startTime": "15:00",
+                          "endTime": "20:00",
+                          "price": null,
+                          "isFull": false,
+                          "timezone": "+0100",
+                          "fillPercentage": 0,
+                          "__typename": "OrchestrationDeliveryMethodServiceSlotItem"
+                        }
+                      ],
+                      "__typename": "OrchestrationDeliveryMethodServiceSlot"
+                    },
+                    {
+                      "date": "2020-09-10",
+                      "slots": [
+                        {
+                          "id": "5",
+                          "startTime": "10:00",
+                          "endTime": "15:00",
+                          "price": null,
+                          "isFull": false,
+                          "timezone": "+0100",
+                          "fillPercentage": 0,
+                          "__typename": "OrchestrationDeliveryMethodServiceSlotItem"
+                        },
+                        {
+                          "id": "10",
+                          "startTime": "15:00",
+                          "endTime": "20:00",
+                          "price": null,
+                          "isFull": false,
+                          "timezone": "+0100",
+                          "fillPercentage": 0,
+                          "__typename": "OrchestrationDeliveryMethodServiceSlotItem"
+                        }
+                      ],
+                      "__typename": "OrchestrationDeliveryMethodServiceSlot"
+                    },
+                    {
+                      "date": "2020-09-11",
+                      "slots": [
+                        {
+                          "id": "6",
+                          "startTime": "10:00",
+                          "endTime": "15:00",
+                          "price": null,
+                          "isFull": false,
+                          "timezone": "+0100",
+                          "fillPercentage": 0,
+                          "__typename": "OrchestrationDeliveryMethodServiceSlotItem"
+                        },
+                        {
+                          "id": "9",
+                          "startTime": "15:00",
+                          "endTime": "20:00",
+                          "price": null,
+                          "isFull": false,
+                          "timezone": "+0100",
+                          "fillPercentage": 0,
+                          "__typename": "OrchestrationDeliveryMethodServiceSlotItem"
+                        }
+                      ],
+                      "__typename": "OrchestrationDeliveryMethodServiceSlot"
+                    },
+                    {
+                      "date": "2020-09-12",
+                      "slots": [
+                        {
+                          "id": "7",
+                          "startTime": "10:00",
+                          "endTime": "15:00",
+                          "price": null,
+                          "isFull": false,
+                          "timezone": "+0100",
+                          "fillPercentage": 0,
+                          "__typename": "OrchestrationDeliveryMethodServiceSlotItem"
+                        },
+                        {
+                          "id": "8",
+                          "startTime": "15:00",
+                          "endTime": "20:00",
+                          "price": null,
+                          "isFull": false,
+                          "timezone": "+0100",
+                          "fillPercentage": 0,
+                          "__typename": "OrchestrationDeliveryMethodServiceSlotItem"
+                        }
+                      ],
+                      "__typename": "OrchestrationDeliveryMethodServiceSlot"
+                    },
+                    {
+                      "date": "2020-09-13",
+                      "slots": [],
+                      "__typename": "OrchestrationDeliveryMethodServiceSlot"
+                    },
+                    {
+                      "date": "2020-09-14",
+                      "slots": [
+                        {
+                          "id": "2",
+                          "startTime": "10:00",
+                          "endTime": "15:00",
+                          "price": null,
+                          "isFull": false,
+                          "timezone": "+0100",
+                          "fillPercentage": 0,
+                          "__typename": "OrchestrationDeliveryMethodServiceSlotItem"
+                        },
+                        {
+                          "id": "13",
+                          "startTime": "15:00",
+                          "endTime": "20:00",
+                          "price": null,
+                          "isFull": false,
+                          "timezone": "+0100",
+                          "fillPercentage": 0,
+                          "__typename": "OrchestrationDeliveryMethodServiceSlotItem"
+                        }
+                      ],
+                      "__typename": "OrchestrationDeliveryMethodServiceSlot"
+                    },
+                    {
+                      "date": "2020-09-15",
+                      "slots": [
+                        {
+                          "id": "3",
+                          "startTime": "10:00",
+                          "endTime": "15:00",
+                          "price": null,
+                          "isFull": false,
+                          "timezone": "+0100",
+                          "fillPercentage": 0,
+                          "__typename": "OrchestrationDeliveryMethodServiceSlotItem"
+                        },
+                        {
+                          "id": "12",
+                          "startTime": "15:00",
+                          "endTime": "20:00",
+                          "price": null,
+                          "isFull": false,
+                          "timezone": "+0100",
+                          "fillPercentage": 0,
+                          "__typename": "OrchestrationDeliveryMethodServiceSlotItem"
+                        }
+                      ],
+                      "__typename": "OrchestrationDeliveryMethodServiceSlot"
+                    },
+                    {
+                      "date": "2020-09-16",
+                      "slots": [
+                        {
+                          "id": "4",
+                          "startTime": "10:00",
+                          "endTime": "15:00",
+                          "price": null,
+                          "isFull": false,
+                          "timezone": "+0100",
+                          "fillPercentage": 0,
+                          "__typename": "OrchestrationDeliveryMethodServiceSlotItem"
+                        },
+                        {
+                          "id": "11",
+                          "startTime": "15:00",
+                          "endTime": "20:00",
+                          "price": null,
+                          "isFull": false,
+                          "timezone": "+0100",
+                          "fillPercentage": 0,
+                          "__typename": "OrchestrationDeliveryMethodServiceSlotItem"
+                        }
+                      ],
+                      "__typename": "OrchestrationDeliveryMethodServiceSlot"
+                    },
+                    {
+                      "date": "2020-09-17",
+                      "slots": [
+                        {
+                          "id": "5",
+                          "startTime": "10:00",
+                          "endTime": "15:00",
+                          "price": null,
+                          "isFull": false,
+                          "timezone": "+0100",
+                          "fillPercentage": 0,
+                          "__typename": "OrchestrationDeliveryMethodServiceSlotItem"
+                        },
+                        {
+                          "id": "10",
+                          "startTime": "15:00",
+                          "endTime": "20:00",
+                          "price": null,
+                          "isFull": false,
+                          "timezone": "+0100",
+                          "fillPercentage": 0,
+                          "__typename": "OrchestrationDeliveryMethodServiceSlotItem"
+                        }
+                      ],
+                      "__typename": "OrchestrationDeliveryMethodServiceSlot"
+                    },
+                    {
+                      "date": "2020-09-18",
+                      "slots": [
+                        {
+                          "id": "6",
+                          "startTime": "10:00",
+                          "endTime": "15:00",
+                          "price": null,
+                          "isFull": false,
+                          "timezone": "+0100",
+                          "fillPercentage": 0,
+                          "__typename": "OrchestrationDeliveryMethodServiceSlotItem"
+                        },
+                        {
+                          "id": "9",
+                          "startTime": "15:00",
+                          "endTime": "20:00",
+                          "price": null,
+                          "isFull": false,
+                          "timezone": "+0100",
+                          "fillPercentage": 0,
+                          "__typename": "OrchestrationDeliveryMethodServiceSlotItem"
+                        }
+                      ],
+                      "__typename": "OrchestrationDeliveryMethodServiceSlot"
+                    },
+                    {
+                      "date": "2020-09-19",
+                      "slots": [
+                        {
+                          "id": "7",
+                          "startTime": "10:00",
+                          "endTime": "15:00",
+                          "price": null,
+                          "isFull": false,
+                          "timezone": "+0100",
+                          "fillPercentage": 0,
+                          "__typename": "OrchestrationDeliveryMethodServiceSlotItem"
+                        },
+                        {
+                          "id": "8",
+                          "startTime": "15:00",
+                          "endTime": "20:00",
+                          "price": null,
+                          "isFull": false,
+                          "timezone": "+0100",
+                          "fillPercentage": 0,
+                          "__typename": "OrchestrationDeliveryMethodServiceSlotItem"
+                        }
+                      ],
+                      "__typename": "OrchestrationDeliveryMethodServiceSlot"
+                    },
+                    {
+                      "date": "2020-09-20",
+                      "slots": [],
+                      "__typename": "OrchestrationDeliveryMethodServiceSlot"
+                    },
+                    {
+                      "date": "2020-09-21",
+                      "slots": [
+                        {
+                          "id": "2",
+                          "startTime": "10:00",
+                          "endTime": "15:00",
+                          "price": null,
+                          "isFull": false,
+                          "timezone": "+0100",
+                          "fillPercentage": 0,
+                          "__typename": "OrchestrationDeliveryMethodServiceSlotItem"
+                        },
+                        {
+                          "id": "13",
+                          "startTime": "15:00",
+                          "endTime": "20:00",
+                          "price": null,
+                          "isFull": false,
+                          "timezone": "+0100",
+                          "fillPercentage": 0,
+                          "__typename": "OrchestrationDeliveryMethodServiceSlotItem"
+                        }
+                      ],
+                      "__typename": "OrchestrationDeliveryMethodServiceSlot"
+                    },
+                    {
+                      "date": "2020-09-22",
+                      "slots": [
+                        {
+                          "id": "3",
+                          "startTime": "10:00",
+                          "endTime": "15:00",
+                          "price": null,
+                          "isFull": false,
+                          "timezone": "+0100",
+                          "fillPercentage": 0,
+                          "__typename": "OrchestrationDeliveryMethodServiceSlotItem"
+                        },
+                        {
+                          "id": "12",
+                          "startTime": "15:00",
+                          "endTime": "20:00",
+                          "price": null,
+                          "isFull": false,
+                          "timezone": "+0100",
+                          "fillPercentage": 0,
+                          "__typename": "OrchestrationDeliveryMethodServiceSlotItem"
+                        }
+                      ],
+                      "__typename": "OrchestrationDeliveryMethodServiceSlot"
+                    },
+                    {
+                      "date": "2020-09-23",
+                      "slots": [
+                        {
+                          "id": "4",
+                          "startTime": "10:00",
+                          "endTime": "15:00",
+                          "price": null,
+                          "isFull": false,
+                          "timezone": "+0100",
+                          "fillPercentage": 0,
+                          "__typename": "OrchestrationDeliveryMethodServiceSlotItem"
+                        },
+                        {
+                          "id": "11",
+                          "startTime": "15:00",
+                          "endTime": "20:00",
+                          "price": null,
+                          "isFull": false,
+                          "timezone": "+0100",
+                          "fillPercentage": 0,
+                          "__typename": "OrchestrationDeliveryMethodServiceSlotItem"
+                        }
+                      ],
+                      "__typename": "OrchestrationDeliveryMethodServiceSlot"
+                    },
+                    {
+                      "date": "2020-09-24",
+                      "slots": [
+                        {
+                          "id": "5",
+                          "startTime": "10:00",
+                          "endTime": "15:00",
+                          "price": null,
+                          "isFull": false,
+                          "timezone": "+0100",
+                          "fillPercentage": 0,
+                          "__typename": "OrchestrationDeliveryMethodServiceSlotItem"
+                        },
+                        {
+                          "id": "10",
+                          "startTime": "15:00",
+                          "endTime": "20:00",
+                          "price": null,
+                          "isFull": false,
+                          "timezone": "+0100",
+                          "fillPercentage": 0,
+                          "__typename": "OrchestrationDeliveryMethodServiceSlotItem"
+                        }
+                      ],
+                      "__typename": "OrchestrationDeliveryMethodServiceSlot"
+                    },
+                    {
+                      "date": "2020-09-25",
+                      "slots": [
+                        {
+                          "id": "6",
+                          "startTime": "10:00",
+                          "endTime": "15:00",
+                          "price": null,
+                          "isFull": false,
+                          "timezone": "+0100",
+                          "fillPercentage": 0,
+                          "__typename": "OrchestrationDeliveryMethodServiceSlotItem"
+                        },
+                        {
+                          "id": "9",
+                          "startTime": "15:00",
+                          "endTime": "20:00",
+                          "price": null,
+                          "isFull": false,
+                          "timezone": "+0100",
+                          "fillPercentage": 0,
+                          "__typename": "OrchestrationDeliveryMethodServiceSlotItem"
+                        }
+                      ],
+                      "__typename": "OrchestrationDeliveryMethodServiceSlot"
+                    },
+                    {
+                      "date": "2020-09-26",
+                      "slots": [
+                        {
+                          "id": "7",
+                          "startTime": "10:00",
+                          "endTime": "15:00",
+                          "price": null,
+                          "isFull": false,
+                          "timezone": "+0100",
+                          "fillPercentage": 0,
+                          "__typename": "OrchestrationDeliveryMethodServiceSlotItem"
+                        },
+                        {
+                          "id": "8",
+                          "startTime": "15:00",
+                          "endTime": "20:00",
+                          "price": null,
+                          "isFull": false,
+                          "timezone": "+0100",
+                          "fillPercentage": 0,
+                          "__typename": "OrchestrationDeliveryMethodServiceSlotItem"
+                        }
+                      ],
+                      "__typename": "OrchestrationDeliveryMethodServiceSlot"
+                    }
+                  ],
+                  "__typename": "OrchestrationDeliveryMethodService"
+                }
+              ],
+              "__typename": "OrchestrationDeliveryMethod"
+            }
+          ],
+          "products": [
+            {
+              "masterProductId": "07236a0e-6e64-4ced-91db-fd62e705a9d8",
+              "sku": "6281007023573",
+              "quantity": 6,
+              "unitPrice": {
+                "currency": "EUR",
+                "price": 0,
+                "priceVat": 0.28,
+                "vatPercentage": 0,
+                "__typename": "OrchestrationPartProductPrice"
+              },
+              "rowPrice": {
+                "currency": "EUR",
+                "price": 0,
+                "priceVat": 1.68,
+                "vatPercentage": 0,
+                "__typename": "OrchestrationPartProductPrice"
+              },
+              "__typename": "OrchestrationPartProduct"
+            }
+          ],
+          "place": {
+            "id": "02a1708f-63d7-44dc-aa02-3ea888d3546a",
+            "packingOptions": [],
+            "__typename": "OrchestrationPartPlace"
+          },
+          "totalPrice": {
+            "price": 0,
+            "currency": "EUR",
+            "priceVat": 1.68,
+            "__typename": "OrchestrationCurrencyPrice"
+          },
+          "__typename": "OrchestrationPart"
+        }
+      ],
+      "paymentMethods": [
+        {
+          "backend": "offline",
+          "type": "offline",
+          "services": [
+            {
+              "type": "card",
+              "name": "payment on delivery",
+              "code": null,
+              "logoUrl": null,
+              "fee": {
+                "price": 0,
+                "currency": "EUR",
+                "priceVat": null,
+                "__typename": "OrchestrationCurrencyPrice"
+              },
+              "__typename": "OrchestrationPaymentMethodService"
+            }
+          ],
+          "fee": null,
+          "__typename": "OrchestrationPaymentMethod"
+        }
+      ],
+      "totalPrice": {
+        "price": 0,
+        "currency": "EUR",
+        "priceVat": 1.68,
+        "__typename": "OrchestrationCurrencyPrice"
+      },
+      "editable": true,
+      "cancellable": true,
+      "__typename": "Orchestration"
+    }
+  },
+  "metadata": {},
+  "coupon": null,
+  "voucher": null,
+  "discount": null
+}

@@ -1,0 +1,15 @@
+@font-face {
+  font-family: 'Gesta';
+  src: url('/fonts/gesta/GestaLig.otf') format('opentype');
+  font-weight: 300;
+  font-style: normal;
+  font-display: auto;
+}
+
+@font-face {
+  font-family: 'Gesta';
+  src: url('/fonts/gesta/GestaBol.otf') format('opentype');
+  font-weight: 700;
+  font-style: normal;
+  font-display: auto;
+}
