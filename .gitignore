@@ -1,0 +1,49 @@
+# See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
+
+# dependencies
+/node_modules
+/.pnp
+.pnp.js
+
+# testing
+/coverage
+/cypress/videos
+/cypress/screenshots
+
+# next.js
+/.next/
+/out/
+
+# production
+/build
+
+# misc
+.DS_Store
+.env*
+buildz.sh
+
+# debug
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+.idea/
+.vscode/
+
+# Coverage is added to repo by CircleCI
+jest-coverage
+coverage
+cypress-coverage
+cypress/videos
+reports
+.nyc_output
+test-report.xml
+
+
+# Azure AD B2C
+b2c-custom-policy/appsettings.json
+b2c-custom-policy/Environments
+
+# Generated sitemap files
+public/sitemap*.xml
+public/robots.txt

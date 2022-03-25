@@ -1,0 +1,117 @@
+version: 2.1
+
+jobs:
+  test:
+    docker:
+      - image: cimg/node:14.16.0-browsers
+    resource_class: xlarge
+    steps:
+      - checkout
+      - run:
+          name: Install npm dependencies
+          command: |
+            yarn install
+            echo -e "DG_API_KEY=${staging_api_key}\nDG_ORGANIZATION_ID=${staging_organization_id}\nDG_API_URL=${staging_api_url}\nSHOPPER_API_URL=${staging_shopper_api_url}\nDEFAULT_STORE_ID=${staging_default_store_id}\nLOOKUP_COUNTRY_CODE=${staging_lookup_country_code}\nCLUSTER=${staging_cluster}\nGOOGLE_TAG_MANAGER_KEY=${staging_google_tag_manager_key}\nGOOGLE_MAP_KEY=${staging_google_map_key}\nFACEBOOK_DOMAIN_VERIFICATION=${staging_facebook_domain_verification}\nBRAND_THEME=${staging_brand_theme}\nNEXTAUTH_URL=${staging_nextauth_url}\nAUTH_TENANT_NAME=${staging_auth_tenant_name}\nAUTH_TENANT_ID=${staging_auth_tenant_id}\nAUTH_CLIENT_ID=${staging_auth_client_id}\nAUTH_CLIENT_SECRET=${staging_auth_client_secret}\nAUTH_LOGIN_FLOW=${staging_auth_login_flow}\nAUTH_PROFILE_EDIT_URL=${staging_auth_profile_edit_url}\nAUTH_PASSWORD_RESET_URL=${staging_auth_password_reset_url}\n" > .env
+          # webpack expects .env to exist
+      - run:
+          name: Run tests
+          command: |
+            yarn cy:ci
+            yarn test:coverage
+      - store_artifacts:
+          path: cypress\screenshots
+      - store_artifacts:
+          path: cypress\videos
+
+  inc-semver:
+    docker:
+      - image: cimg/node:14.16.0-browsers
+    steps:
+      - checkout
+      - add_ssh_keys
+      - run:
+          command: |
+            git config user.email $GIT_USER_EMAIL && git config user.name $GIT_USER_NAME
+            git pull
+            yarn install
+            yarn release
+            git push --follow-tags origin master
+  
+  deploy:
+    docker:
+      - image: cimg/node:14.16.0-browsers
+    parameters:
+      client:
+        type: string
+      cluster:
+        type: string
+      theme:
+        # This value is passed all the way to the built Docker image
+        # and used to customize colors and logos for specific customer.
+        # Leave empty for default theme.
+        type: string
+        default: ''
+    steps:
+      - checkout
+      - setup_remote_docker:
+          version: 19.03.13
+          docker_layer_caching: true
+      - run:
+          name: Docker Login
+          command: docker login -u $DOCKER_USER -p $DOCKER_PASS $DOCKER_REGISTRY
+      - run:
+          command: |
+            git pull origin $CIRCLE_BRANCH
+            .circleci/publish_image.sh << parameters.client >> << parameters.cluster >> << parameters.theme >>
+
+            CLUSTER_NAME=bunbury-client-dev
+            DEPLOY_KEY=$DEPLOY_TOKEN
+            .circleci/deploy_image.sh << parameters.client >> << parameters.cluster >> $DEPLOY_KEY $CLUSTER_NAME
+
+workflows:
+  version: 2
+  test-increment-build-deploy:
+    jobs:
+      # Run tests for all pushed branches
+      - test
+      # Increase semantic version in package.json and
+      # create git tag when pushing to master branch
+      - inc-semver:
+          requires:
+            - test
+          filters:
+            branches:
+              only: master
+      - deploy-staging:
+          type: approval
+          requires:
+            - inc-semver
+      - deploy-production:
+          type: approval
+          requires:
+            - inc-semver
+      # Pushing to docker registry with an incremented tag triggers deployment to cluster.
+      # Builds Docker images for dev env with format: bunbury-client-dev:1.0.0
+      - deploy:
+          name: deploy-bunbury-dev
+          client: bunbury
+          cluster: dev
+          filters:
+            branches:
+              only: master
+          requires:
+            - inc-semver
+      # And for staging env: bunbury-client-staging:1.0.0
+      - deploy:
+          name: deploy-bunbury-staging
+          client: bunbury
+          cluster: staging
+          requires:
+            - deploy-staging
+      # And for production env: bunbury-client-production:1.0.0
+      - deploy:
+          name: deploy-bunbury-production
+          client: bunbury
+          cluster: production
+          requires:
+            - deploy-production
