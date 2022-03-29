@@ -1,5 +1,5 @@
 {
-  "baseUrl": "http://localhost:3000",
+  "baseUrl": "https://bfm-test.vercel.app",
   "videoUploadOnPasses": false,
   "env": {
     "CYPRESS_CRASH_REPORTS": 0

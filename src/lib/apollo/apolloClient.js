@@ -59,7 +59,7 @@ function getLink(ctx) {
     authLink,
     new RetryLink(),
     new BatchHttpLink({
-      uri: urljoin(graphqlUrl || 'http://localhost:3000', 'api/graphql'),
+      uri: urljoin(graphqlUrl || 'https://bfm-test.vercel.app', 'api/graphql'),
       credentials: 'same-origin',
       fetch,
     }),
