@@ -113,6 +113,11 @@ module.exports = withPlugins(
     // add plugins here..
     withBundleAnalyzer,
     withPWA,
+    {
+      pwa: {
+        dest: 'public'
+      }
+    }
   ],
   nextConfig,
 )
