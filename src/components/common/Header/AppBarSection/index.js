@@ -21,8 +21,6 @@ import Divider from '@mui/material/Divider'
 import Grid from '@mui/material/Grid'
 import Button from '@components/ui/Button'
 import Container from '@mui/material/Container'
-import Backdrop from '@mui/material/Backdrop'
-import { CategoryList } from '@components/common/Header/CategoryList'
 import CmsHeaders from '../CmsHeaders'
 import AccountMenu from './AccountMenu'
 import SearchProducts from '../SearchProducts'
@@ -31,7 +29,6 @@ import { StyledBox, StyledBadge, Popover } from './elements'
 
 const AppBarSection = ({ children, onMenuClick, ...props }) => {
   const [anchorEl, setAnchorEl] = useState(null)
-  const [categoriesAnchor, setCategoriesAnchor] = useState(null)
   const { publicRuntimeConfig = {} } = getConfig() || {}
   const { tenantName } = publicRuntimeConfig
   const { isSignedIn, intl } = useAppState()
@@ -116,45 +113,9 @@ const AppBarSection = ({ children, onMenuClick, ...props }) => {
             <Toolbar disableGutters>
               <Grid container alignItems="center">
                 <Grid item xs={4}>
-                  <Button
-                    variant="text"
-                    color="inherit"
-                    startIcon={<MenuIcon color="primary" />}
-                    onClick={e => {
-                      setCategoriesAnchor(e.currentTarget)
-                    }}
-                  >
+                  <Button variant="text" color="inherit" startIcon={<MenuIcon color="primary" />} onClick={onMenuClick}>
                     {intl.formatMessage(messages.browseProducts)}
                   </Button>
-                  <Backdrop sx={{ color: '#fff', zIndex: theme => theme.zIndex.drawer + 1 }} open={!!categoriesAnchor}>
-                    <Popover
-                      open={!!categoriesAnchor}
-                      anchorEl={categoriesAnchor}
-                      onClose={() => setCategoriesAnchor(null)}
-                      anchorOrigin={{
-                        vertical: 0,
-                        horizontal: 'left',
-                      }}
-                    >
-                      <Button
-                        variant="text"
-                        color="inherit"
-                        startIcon={<MenuIcon color="primary" />}
-                        onClick={() => setCategoriesAnchor(null)}
-                        style={{ backgroundColor: '#fff', border: 'unset', borderRadius: 'unset' }}
-                      >
-                        {intl.formatMessage(messages.browseProducts)}
-                      </Button>
-                      <Box
-                        sx={{
-                          width: 1272,
-                          backgroundColor: '#fff',
-                        }}
-                      >
-                        <CategoryList onSelect={() => setCategoriesAnchor(null)} />
-                      </Box>
-                    </Popover>
-                  </Backdrop>
                 </Grid>
                 <SearchProducts />
                 <Grid container item xs={4} justifyContent="flex-end">

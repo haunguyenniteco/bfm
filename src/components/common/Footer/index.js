@@ -29,7 +29,7 @@ function Footer() {
           minHeight: '30vh',
         }}
       >
-        <Typography variant="h4" gutterBottom>
+        <Typography gutterBottom>
           &copy;&nbsp;
           <FormattedMessage {...messages.copyright} values={{ year, brand }} />
         </Typography>

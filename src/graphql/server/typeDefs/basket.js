@@ -13,6 +13,7 @@ export default gql`
     extId: String
     gtin: String
     sku: String
+    note: String
     masterProductId: String
     quantity: Float
     totalClicksPrice: Float

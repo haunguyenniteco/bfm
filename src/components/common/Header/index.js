@@ -9,29 +9,25 @@ import Divider from '@mui/material/Divider'
 import { CategoryList } from './CategoryList'
 
 const Header = () => {
-  const [showMobileMenu, toggleMobileMenu] = useToggle(false)
+  const [showMenu, toggleMenu] = useToggle(false)
   return (
     <>
-      <AppBarSection onMenuClick={toggleMobileMenu} />
+      <AppBarSection onMenuClick={toggleMenu} />
       <Drawer
         anchor="left"
-        open={showMobileMenu}
+        open={showMenu}
         onClose={() => {
-          toggleMobileMenu()
+          toggleMenu()
         }}
       >
         <Box textAlign="center" p={2}>
           <Logo style={{ marginTop: 6 }} />
-          <IconButton
-            size="small"
-            style={{ position: 'absolute', top: 8, right: 8 }}
-            onClick={() => toggleMobileMenu()}
-          >
+          <IconButton size="small" style={{ position: 'absolute', top: 8, right: 8 }} onClick={() => toggleMenu()}>
             <CloseIcon />
           </IconButton>
         </Box>
         <Divider />
-        <CategoryList showSubcategories onSelect={toggleMobileMenu} />
+        <CategoryList showSubcategories onSelect={toggleMenu} />
       </Drawer>
     </>
   )

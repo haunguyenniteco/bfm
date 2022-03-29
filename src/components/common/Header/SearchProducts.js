@@ -121,6 +121,7 @@ const SearchProducts = () => {
                 <InputAdornment position="start">
                   <IconButton
                     size="small"
+                    aria-label="search"
                     onClick={() => {
                       // on icon click redirect user to search results
                       routeProductSearch(query)

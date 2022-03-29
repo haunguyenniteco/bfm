@@ -2,6 +2,8 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [2.0.13](https://bitbucket.org/digitalfoodie/bunbury-storefront/compare/v2.0.12...v2.0.13) (2022-03-29)
+
 ### [2.0.12](https://bitbucket.org/digitalfoodie/bunbury-storefront/compare/v2.0.11...v2.0.12) (2022-03-24)
 
 ### [2.0.11](https://bitbucket.org/digitalfoodie/bunbury-storefront/compare/v2.0.10...v2.0.11) (2022-03-24)

@@ -13,6 +13,7 @@ export const basketProductFragment = gql`
     extId
     gtin
     sku
+    note
     masterProductId
     quantity
     totalClicksPrice

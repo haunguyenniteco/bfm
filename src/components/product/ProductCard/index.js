@@ -55,14 +55,7 @@ const ProductCard = ({ product, locale }) => {
         <Link href={getProductRoute(product, locale)} passHref>
           <MuiLink color="inherit">
             <Box>
-              <Typography
-                fontWeight="600"
-                variant="h5"
-                minHeight="40px"
-                lineHeight="2.5ex"
-                height="7.5ex"
-                overflow="hidden"
-              >
+              <Typography fontWeight="600" minHeight="40px" lineHeight="2.5ex" height="7.5ex" overflow="hidden">
                 {name[locale]}
               </Typography>
             </Box>

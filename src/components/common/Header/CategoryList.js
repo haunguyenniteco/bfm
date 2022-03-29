@@ -23,21 +23,11 @@ const ListBackItem = ({ label, onClick }) => (
   </ListItem>
 )
 
-export const CategoryList = ({ showSubcategories, onSelect = () => {} }) => {
+export const CategoryList = ({ onSelect = () => {} }) => {
   const { locale } = useChangeLanguage()
   const { intl } = useAppState()
   const [categoryId, setCategoryId] = useState(null)
   const { loading, error, categories, category } = useCategories(categoryId)
-
-  // useEffect(() => {
-  //   // if picked categories have no children
-  //   if (loading || error) {
-  //     return
-  //   }
-  //   if (showSubcategories && categories.length === 0) {
-  //     onSelect()
-  //   }
-  // }, [loading, error, showSubcategories, categories, onSelect])
 
   if (loading || error) {
     return (
@@ -80,13 +70,8 @@ export const CategoryList = ({ showSubcategories, onSelect = () => {} }) => {
                 key={categoryItem.extId}
                 button
                 onClick={() => {
-                  if (showSubcategories) {
-                    setCategoryId(categoryItem.extId)
-                    routeCategorySelect(categoryItem, locale)
-                  } else {
-                    routeCategorySelect(categoryItem, locale)
-                    onSelect()
-                  }
+                  setCategoryId(categoryItem.extId)
+                  routeCategorySelect(categoryItem, locale)
                 }}
               >
                 <ListItemText primary={categoryItem.name[locale]} />

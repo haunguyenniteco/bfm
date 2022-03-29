@@ -4,6 +4,7 @@ const withPlugins = require('next-compose-plugins')
 const withBundleAnalyzer = require('@next/bundle-analyzer')({ enabled: process.env.ANALYZE === 'true' })
 const path = require('path')
 const Dotenv = require('dotenv-webpack')
+const withPWA = require('next-pwa')
 const appConfig = require('./config')
 
 const nextConfig = {
@@ -111,6 +112,7 @@ module.exports = withPlugins(
   [
     // add plugins here..
     withBundleAnalyzer,
+    withPWA,
   ],
   nextConfig,
 )

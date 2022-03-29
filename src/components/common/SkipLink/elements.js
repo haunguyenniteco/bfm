@@ -9,7 +9,7 @@ export const SkipViewLink = styled('a')`
   padding: 4px;
   position: absolute;
   z-index: 99999;
-
+  display: none;
   &:focus {
     transform: translateY(0%);
   }

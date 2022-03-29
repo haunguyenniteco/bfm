@@ -5,7 +5,6 @@ import { FormattedMessage } from 'react-intl'
 import useAppState from '@hooks/useAppState'
 import ComponentError from '@components/common/Error/ComponentError'
 import { useOrder, useStoreInfo } from '@graphql-sdk'
-import { isPickup } from '@lib/helpers'
 import { AuthLayout, CheckoutContainer } from '@components/common'
 import { useBasket } from '@components/basket/BasketItem/context'
 import { OrderDeliveryAndSlotSelector } from '@components/basket/DeliveryAndSlot'
@@ -28,10 +27,7 @@ const OrderConfirmation = () => {
   const { orderId } = router.query
 
   const { data: { order } = {}, loading, error } = useOrder({ storeId, orderId })
-  const { data: { storeInfo } = {} } = useStoreInfo(
-    { storeId: order?.deliverySlot?.storeGuid },
-    { skip: isPickup(order?.deliveryType) },
-  )
+  const { data: { storeInfo } = {} } = useStoreInfo({ storeId: order?.deliverySlot?.storeGuid })
   const { total, deliveryCharge, visibleId, status } = order || {}
 
   useEffect(() => {
