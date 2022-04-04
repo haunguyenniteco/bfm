@@ -1,4 +1,4 @@
-import { useState } from 'react'
+import { useState, useEffect } from 'react'
 import { FormattedMessage } from 'react-intl'
 import { useRouter } from 'next/router'
 import redirect from '@lib/redirect'
@@ -38,6 +38,7 @@ function BasketItem() {
     },
     actions: { setOrchestration, setItemNote, removeItemNote, removeItem },
   } = useBasket()
+  const { from } = router.query
 
   const [noteItem, setNoteItem] = useState(null)
   const [modalVisible, toggleModal] = useToggle(false)
@@ -103,7 +104,9 @@ function BasketItem() {
         setOrchestration(orchestrated)
         router.replace('/checkout')
       } else {
-        const redirectUrl = !address ? '/get-address?redirectUrl=/basket' : '/select-store?redirectUrl=/basket'
+        const redirectUrl = !address
+          ? '/get-address?redirectUrl=/basket?from=get-address'
+          : '/select-store?redirectUrl=/basket?from=select-store'
         router.replace(redirectUrl)
       }
     } catch ({ graphQLErrors }) {
@@ -111,6 +114,12 @@ function BasketItem() {
     }
     setOrchestrating(false)
   }
+
+  useEffect(() => {
+    if (from && (from === 'get-address' || from === 'select-store')) {
+      handleCheckout()
+    }
+  }, [from])
 
   if (!ready) {
     return <BasketSkeletonloader />
