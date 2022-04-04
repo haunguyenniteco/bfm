@@ -102,42 +102,10 @@ export default gql`
   type Query {
     currentCustomer: Customer!
     isSignedIn: Boolean!
-    customerIdentity: AuthCustomer!
-    refreshToken: Auth
-    deliveryAddresses: [DeliveryAddress]
   }
 
   type Mutation {
-    registerCustomer(input: CustomerInput!): AuthCustomer!
-    updateCustomer(
-      title: String
-      first_name: String!
-      last_name: String!
-      email: String!
-      phone: String
-      eula_accepted: Boolean
-    ): Customer!
-
-    changePassword(password: String!, new_password: String!): Auth!
     signinCustomer(username: String, password: String): Auth!
     signinGuest(customer_id: String!, provider: String = "naveo"): Auth!
-    verifyCustomer(token: String!): Boolean
-    passwordReset(password: String!, password_recovery_token: String!): AuthCustomer!
-    forgetPassword(email: String!, provider: String! = "naveo", callback_url: String!): Boolean
-    verifyPasswordRecoveryToken(token: String!): Boolean
-    signoutCustomer: Boolean
-    trustedSignin(
-      email: String!
-      username: String!
-      access_token: String!
-      access_token_expires_at: String
-      refresh_token: String
-      refresh_token_expires_at: String
-      customer_id: String!
-      provider: String!
-    ): Auth
-
-    saveDeliveryAddress(input: DeliveryAddressInput!): [DeliveryAddress]!
-    deleteDeliveryAddress(addressId: String!): Boolean
   }
 `

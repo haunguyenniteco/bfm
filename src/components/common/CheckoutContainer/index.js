@@ -5,6 +5,7 @@ import Container from '@mui/material/Container'
 const CheckoutContainer = ({
   children,
   childrenStyles,
+  childrenContainerStyles,
   headerComponent,
   alertComponent,
   footerComponent,
@@ -24,7 +25,9 @@ const CheckoutContainer = ({
       )}
 
       <Box sx={{ display: 'flex', alignItems: 'center', py: 2 }} style={childrenStyles}>
-        <Container maxWidth="xs">{children}</Container>
+        <Container maxWidth="xs" style={childrenContainerStyles}>
+          {children}
+        </Container>
       </Box>
 
       {footerComponent && (

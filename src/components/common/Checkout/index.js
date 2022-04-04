@@ -50,7 +50,7 @@ function Checkout() {
         setOrder(order)
         const { checkoutUrl } = order.payment
         if (checkoutUrl) {
-          router.replace(`${checkoutUrl}`)
+          router.replace('/checkout/payment')
         }
       })
       .catch(err => {

@@ -27,12 +27,6 @@ const useAuth = () => {
     }
   }
 
-  const signInTrusted = async (authData, apolloClient) => {
-    persist.setAccessToken(authData)
-    await apolloClient.resetStore()
-    Router.replace('/confirm-details')
-  }
-
   const signInGuest = async authData => {
     persist.setGuestAccessToken(authData)
   }
@@ -49,7 +43,7 @@ const useAuth = () => {
     }
   }
 
-  return { signIn, signInTrusted, signInGuest, signOut }
+  return { signIn, signInGuest, signOut }
 }
 
 export default useAuth

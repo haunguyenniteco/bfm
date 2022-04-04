@@ -31,6 +31,7 @@ const AuthLayout = ({
   allowBackOption,
   allowCloseOption,
   secondaryHeader,
+  hideAppBar,
 }) => {
   const router = useRouter()
   const { intl } = useAppState()
@@ -46,66 +47,68 @@ const AuthLayout = ({
     <Layout>
       <NextSeo title={seoTitle || title} data-cy="pageSeo" />
       <SkipLink href="#main" message={intl.formatMessage(messages.skipToContent)} />
-      <AppBar position="sticky" color={color} role="banner">
-        <Container>
-          <Toolbar disableGutters>
-            {allowBackOption && (
-              <IconButton
-                data-cy="auth-back-button"
-                onClick={() => {
-                  router.back()
-                }}
-                aria-label={intl.formatMessage(messages.back)}
-                title={intl.formatMessage(messages.back)}
-                size="large"
-              >
-                <ArrowBackIcon />
-              </IconButton>
-            )}
-
-            <Box flexGrow={1} display="flex" justifyContent="center">
-              {!!title && (
-                <Typography variant="h4" data-cy="auth-title">
-                  {title}
-                </Typography>
-              )}
-              {!title && (
-                <Avatar
-                  src={store?.chain?.logoUrl}
-                  variant="square"
-                  alt={store?.chain?.name}
-                  sx={{ width: 60, height: 'auto', backgroundColor: 'transparent' }}
+      {!hideAppBar && (
+        <AppBar position="sticky" color={color} role="banner">
+          <Container>
+            <Toolbar disableGutters>
+              {allowBackOption && (
+                <IconButton
+                  data-cy="auth-back-button"
+                  onClick={() => {
+                    router.back()
+                  }}
+                  aria-label={intl.formatMessage(messages.back)}
+                  title={intl.formatMessage(messages.back)}
+                  size="large"
                 >
-                  <BrandLogo />
-                </Avatar>
+                  <ArrowBackIcon />
+                </IconButton>
               )}
-            </Box>
 
-            {allowCloseOption && (
-              <IconButton
-                data-cy="auth-close"
-                onClick={() => {
-                  if (onClose) {
-                    onClose()
-                  }
-                  router.push('/')
-                }}
-                aria-label={intl.formatMessage(messages.close)}
-                title={intl.formatMessage(messages.close)}
-                size="large"
-              >
-                <CloseIcon />
-              </IconButton>
-            )}
-          </Toolbar>
-        </Container>
-        {secondaryHeader && (
-          <Toolbar variant="dense" sx={{ bgcolor: 'primary.dark', color: 'primary.contrastText' }}>
-            <Container>{secondaryHeader}</Container>
-          </Toolbar>
-        )}
-        <Divider />
-      </AppBar>
+              <Box flexGrow={1} display="flex" justifyContent="center">
+                {!!title && (
+                  <Typography variant="h4" data-cy="auth-title">
+                    {title}
+                  </Typography>
+                )}
+                {!title && (
+                  <Avatar
+                    src={store?.chain?.logoUrl}
+                    variant="square"
+                    alt={store?.chain?.name}
+                    sx={{ width: 60, height: 'auto', backgroundColor: 'transparent' }}
+                  >
+                    <BrandLogo />
+                  </Avatar>
+                )}
+              </Box>
+
+              {allowCloseOption && (
+                <IconButton
+                  data-cy="auth-close"
+                  onClick={() => {
+                    if (onClose) {
+                      onClose()
+                    }
+                    router.push('/')
+                  }}
+                  aria-label={intl.formatMessage(messages.close)}
+                  title={intl.formatMessage(messages.close)}
+                  size="large"
+                >
+                  <CloseIcon />
+                </IconButton>
+              )}
+            </Toolbar>
+          </Container>
+          {secondaryHeader && (
+            <Toolbar variant="dense" sx={{ bgcolor: 'primary.dark', color: 'primary.contrastText' }}>
+              <Container>{secondaryHeader}</Container>
+            </Toolbar>
+          )}
+          <Divider />
+        </AppBar>
+      )}
       <Box role="main" id="main">
         {children}
       </Box>

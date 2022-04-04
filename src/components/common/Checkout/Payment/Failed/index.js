@@ -1,4 +1,5 @@
 import { useEffect } from 'react'
+import { useRouter } from 'next/router'
 import useAppState from '@hooks/useAppState'
 import useSlotReservation from '@hooks/useSlotReservation'
 import Typography from '@mui/material/Typography'
@@ -11,12 +12,31 @@ import messages from '../../messages'
 
 function PaymentFailed() {
   const { intl } = useAppState()
+  const router = useRouter()
   const { refreshSlotReservationToken } = useSlotReservation()
+  const { success } = router.query
 
-  useEffect(refreshSlotReservationToken, [])
+  useEffect(() => {
+    if (!success) {
+      window.parent.postMessage(
+        {
+          message: window.location.href,
+        },
+        '*',
+      )
+    } else {
+      refreshSlotReservationToken()
+    }
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [success])
 
   return (
-    <AuthLayout title={intl.formatMessage(messages.payment)} bg="white">
+    <AuthLayout
+      title={intl.formatMessage(messages.payment)}
+      bg="white"
+      allowCloseOption={false}
+      allowBackOption={false}
+    >
       <CheckoutContainer>
         <Grid container spacing={3} pt={5}>
           <Grid

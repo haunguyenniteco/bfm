@@ -1,3 +1,5 @@
+import { useEffect } from 'react'
+import { useRouter } from 'next/router'
 import useAppState from '@hooks/useAppState'
 import Typography from '@mui/material/Typography'
 import Grid from '@mui/material/Grid'
@@ -9,9 +11,27 @@ import messages from './messages'
 
 function CancelledCheckout() {
   const { intl } = useAppState()
+  const router = useRouter()
+  const { success } = router.query
+
+  useEffect(() => {
+    if (!success) {
+      window.parent.postMessage(
+        {
+          message: window.location.href,
+        },
+        '*',
+      )
+    }
+  }, [success])
 
   return (
-    <AuthLayout title={intl.formatMessage(messages.payment)} bg="white">
+    <AuthLayout
+      title={intl.formatMessage(messages.payment)}
+      bg="white"
+      allowCloseOption={false}
+      allowBackOption={false}
+    >
       <CheckoutContainer>
         <Grid container spacing={3} pt={5}>
           <Grid

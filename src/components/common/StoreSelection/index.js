@@ -50,8 +50,8 @@ const StoreSelection = () => {
     const redirectUrl = router.query && router.query.redirectUrl
     const hasRedirectUrl = typeof redirectUrl === 'string'
     const sameStore = selected.id === delivery?.store.id
-    // clear basket item if store is different
-    if (!sameStore) {
+    // clear basket item if store is selected and change
+    if (delivery?.store?.id && !sameStore) {
       clear()
     }
     // Skip slot selection and continue to initial page

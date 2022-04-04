@@ -36,41 +36,6 @@ export class ShopperAPI extends RESTDataSource {
     return this.fetch({ method: 'HEAD', path, body, ...init })
   }
 
-  async getCustomer(customerId) {
-    const { data } = await this.get(`/customers/${customerId}`)
-    return data
-  }
-
-  async updateCustomer(id, params) {
-    const { data } = await this.patch(`/customers/${id}`, params)
-    return data
-  }
-
-  async getCustomerDeliveryAddresses(id) {
-    const { data } = await this.get(`/customers/${id}/delivery-addresses`)
-    return data
-  }
-
-  async saveCustomerDeliveryAddress(id, params) {
-    const { data } = await this.post(`/customers/${id}/delivery-addresses`, params)
-    return data
-  }
-
-  async deleteCustomerDeliveryAddress(id, addressId) {
-    const data = await this.delete(`/customers/${id}/delivery-addresses/${addressId}`)
-    return data
-  }
-
-  async changePassword(params) {
-    const { data } = await this.put('/customers/password', params)
-    return data
-  }
-
-  async getCustomerIdentity() {
-    const { data } = await this.get('/customers/authorize')
-    return data
-  }
-
   async createShoppingList(customerId, payload) {
     const { data } = await this.post(`/customers/${customerId}/shopping-lists`, payload).catch(err => {
       throw new Error('Failed to create shopping list.', err)

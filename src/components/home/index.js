@@ -4,7 +4,7 @@ import { Loading } from '@components/ui/index'
 import ComponentError from '@components/common/Error/ComponentError'
 import Box from '@mui/material/Box'
 import useContent from '@hooks/useContent'
-import Onboarding from '@components/common/AppDataProvider/Onboarding'
+// import Onboarding from '@components/common/AppDataProvider/Onboarding'
 import messages from './messages'
 
 const Home = () => {
@@ -18,7 +18,7 @@ const Home = () => {
     <Box mb="100px">
       <NextSeo title={intl.formatMessage(messages.pageTitle)} />
       {content}
-      <Onboarding />
+      {/* <Onboarding /> */}
     </Box>
   )
 }

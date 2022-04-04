@@ -1,4 +1,5 @@
 import { useEffect } from 'react'
+import { useRouter } from 'next/router'
 import { useFinalizeOrder } from '@graphql-sdk'
 import useSlotReservation from '@hooks/useSlotReservation'
 import useAppState from '@hooks/useAppState'
@@ -13,12 +14,14 @@ import messages from './messages'
 
 function ThankYou() {
   const { intl } = useAppState()
+  const router = useRouter()
   const finalizeOrder = useFinalizeOrder()
   const { clearSlot } = useSlotReservation()
   const {
     state: { order },
     actions: { clearBasketAndSlots },
   } = useBasket()
+  const { success } = router.query
 
   const onFinalizeOrder = async () => {
     if (order?.id) {
@@ -33,11 +36,26 @@ function ThankYou() {
   }
 
   useEffect(() => {
-    onFinalizeOrder()
-  }, [order])
+    if (!success) {
+      window.parent.postMessage(
+        {
+          message: window.location.href,
+        },
+        '*',
+      )
+    } else {
+      onFinalizeOrder()
+    }
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [order, success])
 
   return (
-    <AuthLayout title={intl.formatMessage(messages.payment)} bg="white">
+    <AuthLayout
+      title={intl.formatMessage(messages.payment)}
+      bg="white"
+      allowCloseOption={false}
+      allowBackOption={false}
+    >
       <CheckoutContainer>
         <Grid container spacing={3} pt={5}>
           <Grid
